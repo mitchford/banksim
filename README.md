@@ -1,0 +1,2 @@
+# banksim
+Golang practice
