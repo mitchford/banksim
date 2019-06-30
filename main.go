@@ -22,7 +22,6 @@ func moveMoney(w http.ResponseWriter, r*http.Request) {
 
 	_, transfer := parseTransfer(transferReq.FromAccountId, transferReq.ToAccountId, transferReq.Value)
 
-	fmt.Println(transfer)
 	if _, err := transfer.Move(); err != nil {
 		fmt.Println(err)
 	}
